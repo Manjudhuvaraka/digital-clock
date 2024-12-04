@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+@font-face {
+    font-family:digital-7;
+    src: url('digital-7.ttf');
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    gap: 20px;
+    
+}
+.frame{
+    width: 500px;
+    height: 300px;
+    background-color: #2d3436;
+    border: 20px solid #00cec9;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;;
+    color: white;
+    font-size: 60px;
+    line-height: 120px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto auto auto auto;    
+}
+.clock{
+    grid-column-start: 1;
+    grid-column-end:5;
+    border-bottom: 2px solid black;
+    margin: 0;
+    font-family:digital-7;    
+}
+.time{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 0;
+}
+.tme{
+    display: flex;
+    column-gap: 20px;
+   
+}
+.seconds{
+    display: flex;
+}
+.div2{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family:digital-7;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date,.day,.temp{
+    width: 140px;
+}
+.txt,.seconds{
+    font-size: 20px;
+    align-content: baseline;
+}
+.tme,.seconds div{
+    width: 20;
+    background-color: blue;
+}
